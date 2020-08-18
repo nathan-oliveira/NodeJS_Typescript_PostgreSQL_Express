@@ -5,7 +5,7 @@ import { TestController } from '../../controllers/test/testController'
 export class Test {
     public testController: TestController = new TestController();
 
-    public routes(app): void {
+    public routes(app: any): void {
         app.get('/test', (req: Request, res: Response, next: NextFunction) => {
             this.testController.list(app, req, res, next)
         })

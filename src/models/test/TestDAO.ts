@@ -3,8 +3,8 @@
 import conn from '../../bin/key';
 
 export class TestDAO {
-    static getAll(callback: any) {
-        let sql = 'select * from drugstore.nivel_usuario';
-        return conn.query(sql, callback);
+    static getAll(callback: any): void {
+        const sql = 'select * from drugstore.nivel_usuario';
+        conn.query(sql, callback);
     }
 }

@@ -21,7 +21,6 @@ class App {
         this.app = express();
         this.middleware();
         this.routes();
-        
     }
 
     private middleware(): void {

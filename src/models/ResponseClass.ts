@@ -1,6 +1,6 @@
-class ResponseClass {
+export default class ResponseClass {
     public error: boolean;
-    public msg: String;
+    public msg: any;
     public dados: any;
 
     constructor() {
@@ -9,5 +9,3 @@ class ResponseClass {
         this.dados = null;
     }
 }
-
-export default ResponseClass;
