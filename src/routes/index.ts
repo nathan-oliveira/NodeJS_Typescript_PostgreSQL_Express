@@ -1,4 +1,3 @@
-// 'use strict'
 import { Request, Response, NextFunction } from 'express';
 import { IndexController } from '@src/controllers/indexController';
 
