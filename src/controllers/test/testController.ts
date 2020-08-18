@@ -1,7 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
-import ResponseClass from '../../models/ResponseClass';
-
-import { TestDAO } from '../../models/test/TestDAO';
+import ResponseClass from '@src/models/ResponseClass';
+import { TestDAO } from '@src/models/test/TestDAO';
 
 export class TestController {
     public list(app: any, req: Request, res: Response, next: NextFunction) : void {

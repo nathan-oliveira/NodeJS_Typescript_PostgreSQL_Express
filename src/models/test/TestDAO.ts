@@ -1,6 +1,6 @@
 'use strict'
 
-import conn from '../../bin/key';
+import conn from '@src/bin/key';
 
 export class TestDAO {
     static getAll(callback: any): void {

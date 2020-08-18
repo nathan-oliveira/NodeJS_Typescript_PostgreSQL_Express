@@ -1,6 +1,5 @@
 // 'use strict'
 import { Request, Response, NextFunction } from 'express';
-// import { IndexController } from '../controllers/indexController';
 import { IndexController } from '@src/controllers/indexController';
 
 export class Index {

@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express'
-import { TestController } from '../../controllers/test/testController'
+import { TestController } from '@src/controllers/test/testController'
 
 
 export class Test {

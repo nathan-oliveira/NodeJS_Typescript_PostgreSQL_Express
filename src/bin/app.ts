@@ -4,8 +4,8 @@ import express from 'express';
 import * as bp from 'body-parser';
 
 // Routes
-import { Index as IndexRouter } from '../routes/index'
-import { Test as TestRouter } from '../routes/test/test'
+import { Index as IndexRouter } from '@src/routes/index'
+import { Test as TestRouter } from '@src/routes/test/test'
 
 // import * as cors from 'cors';
 // import * as consign from 'consign';

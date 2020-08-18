@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import ResponseClass from '../models/ResponseClass';
+import ResponseClass from '@src/models/ResponseClass';
 
 export class IndexController {
     public listar(app: any, req: Request, res: Response, next: NextFunction): void {
