@@ -1,7 +1,9 @@
 import { Request, Response, NextFunction } from 'express';
+
+import { Controller } from '@src/util/Controller';
 import ResponseClass from '@src/models/ResponseClass';
 
-export class IndexController {
+export class IndexController implements Controller {
     public list(app: any, req: Request, res: Response, next: NextFunction): void {
         const resp = new ResponseClass();
         try {
