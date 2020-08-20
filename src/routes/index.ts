@@ -6,7 +6,7 @@ export class Index {
     
     public routes(app: any): void {
         app.get('/', (req: Request, res: Response, next: NextFunction) => {
-            this.indexController.listar(app, req, res, next);
+            this.indexController.list(app, req, res, next);
         })
     }
 }

@@ -2,7 +2,7 @@ import { Request, Response, NextFunction } from 'express';
 import ResponseClass from '@src/models/ResponseClass';
 
 export class IndexController {
-    public listar(app: any, req: Request, res: Response, next: NextFunction): void {
+    public list(app: any, req: Request, res: Response, next: NextFunction): void {
         const resp = new ResponseClass();
         try {
             resp.msg = 'API FUNCIONANDO.';

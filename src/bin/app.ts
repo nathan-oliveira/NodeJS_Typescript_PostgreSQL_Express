@@ -6,14 +6,14 @@ import cors from 'cors';
 
 // Routes
 import { Index as IndexRouter } from '@src/routes/index'
-import { Test as TestRouter } from '@src/routes/test/test'
+import { UserLevel } from '@src/routes/userLevel/userLevel'
 
 // import * as consign from 'consign';
 
 class App {
     public app: express.Application
     public indexRouter: IndexRouter = new IndexRouter()
-    public testRouter: TestRouter = new TestRouter()
+    public levelRouter: UserLevel = new UserLevel()
 
     constructor() {
         this.app = express();
@@ -30,7 +30,7 @@ class App {
 
     private routes(): void {
         this.indexRouter.routes(this.app);
-        this.testRouter.routes(this.app);
+        this.levelRouter.routes(this.app);
     }
 
     private cors(): void {
